@@ -1,0 +1,5 @@
+* { margin: 0; padding: 0; outline: none;}
+#dowebok { text-align: center;}
+#dowebok input { display: inline-block; width: 400px; height: 40px; padding: 0 10px; border: 1px solid #dcdfe6;}
+#dowebok button { width: 60px; height: 42px; margin-left: 10px; border: 1px solid #dcdfe6; cursor: pointer;}
+#dowebok button:hover { color: #fff; border-color: #409eff; background-color: #409eff;}
