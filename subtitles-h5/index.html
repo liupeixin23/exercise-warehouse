@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+</head>
+<style>
+  /* ::cue {
+    color: red;
+    text-shadow: 0 1px #000, 1px 0 #000, -1px 0 #000, 0 -1px #000;
+    font-size: 26px;
+  } */
+
+  video::cue {
+    background-image: linear-gradient(to bottom, dimgray, lightgray);
+    color: #ffffff;
+  }
+
+  /* ::cue(b) {
+    color: red;
+  }
+
+  ::cue(c) {
+    color: blue;
+  } */
+</style>
+
+<body>
+  <div id="main">
+    <h1>HTML5 video视频track加载WebVtt字幕实例</h1>
+    <div id="body">
+      <div id="effect" class="part">
+        <h3>效果：</h3>
+        <div class="show">
+          <div class="demo">
+            <video id="video" width="350" height="600" autoplay autobuffer controls>
+              <source src="./sing-song.mp4" type="video/mp4">
+              <track src="./sing-song.vtt" kind="subtitles" label="中文字幕" srclang="zh">
+              <track src="./sing-song-en.vtt" kind="subtitles" label="英文字幕" srclang="en">
+              <track src="./sing-song_fix.vtt" kind="subtitles" label="中英字幕" srclang="zh" default>
+            </video>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
